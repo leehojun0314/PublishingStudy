@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>우선순위선택자 #10</title>
+		<style>
+			#a h1 {
+				color: red;
+			}
+			#a h1:nth-child(1) {
+				color: blue;
+			}
+			.b > #b {
+				color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a" class="b">
+			<h1 id="b">1번</h1>
+			<h1>2번</h1>
+			<h1>3번</h1>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>css 초기화 속성</title>
+		<style>
+			* {
+				font-size: 50px;
+			}
+			em,
+			i,
+			address,
+			cite {
+				font-style: normal;
+			}
+			/* em 태그처럼 글자가 오른쪽으로 기울어져 있는 italic의 경우 font-style: normal을 사용해서 
+			기울어진걸 바로 세워줄 수 있다
+			html태그들은 태그별로 가지고 있는 고유의 특징이 있는데 웹사이트에서 이러한 특징들을 깔끔하게 보이도록 없애주는 css속성들을 css초기화 속성이라고 한다 */
+			h1,
+			strong,
+			b {
+				font-weight: normal;
+			}
+			/* h1태그 처럼 글자가 굵은 태그들은 font-weight: normal을 사용해서 일반적인 글자와 똑같은 형태로 만들어 줄 수 있다. */
+			ins,
+			del,
+			abbr,
+			a {
+				text-decoration: none;
+			}
+			/* 글자에 선이 들어가 있는 형태의 태그들은 text-decoration: none을 사용해서 없애줄 수 있다 */
+			mark {
+				background-color: transparent;
+			}
+			/* mark태그 처럼 배경색이 들어가 있는 태그의 배경색을 없애주고 싶으면 background-color: transparent를 사용할것 */
+		</style>
+	</head>
+	<body>
+		<em>em 태그</em>
+		<i>i태그</i>
+		<address>address태그</address>
+		<cite>cite 태그</cite>
+
+		<h1>h1태그</h1>
+		<strong>strong태그</strong>
+		<b>b태그</b>
+
+		<ins>ins태그</ins>
+		<del>del 태그</del>
+		<abbr title="안녕하세요">abbr태그</abbr>
+		<a href="#">a태그</a>
+
+		<mark>mark태그</mark>
+		<details>asdf</details>
+	</body>
+</html>
