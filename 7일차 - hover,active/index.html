@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>hover</title>
+		<style>
+			#a {
+				width: 400px;
+				height: 400px;
+				background-color: blue;
+			}
+			#a:hover {
+				background-color: green;
+			}
+			#b {
+				width: 400px;
+				height: 400px;
+				background-color: red;
+			}
+			#c {
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+			}
+			#b:hover #c {
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a"></div>
+		<div id="b">
+			<div id="c"></div>
+		</div>
+	</body>
+</html>
