@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>color</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			div {
+				width: 300px;
+				height: 300px;
+				margin-top: 30px;
+			}
+			#a1 {
+				background-color: red;
+				/* 1번 색상 단어를 작성해주는 방식 */
+			}
+			#a2 {
+				background-color: #123456;
+				/* 2번 hex코드 방식 */
+			}
+			#a3 {
+				background-color: rgb(102, 30, 179);
+				/* 3번 rgb값을 입력해주는 방식. red green blue 빛의 삼원색 */
+			}
+			#a4 {
+				background-color: rgba(102, 30, 179, 0.3);
+				/* 4번 rgb + opacity(불투명도) 색상에만 불투명도를 적용. 기존 opacity는 내부 글자까지 적용됨 */
+			}
+			#a5 {
+				background-color: hsl(233, 71%, 49%);
+				/* 5번 hsl / hue 생상 / saturation 채도 / lightness 명도 */
+			}
+			#a6 {
+				background-color: hsla(233, 71%, 49%, 0.3);
+				/* 6번 hsl + opacity */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a1"></div>
+		<div id="a2"></div>
+		<div id="a3"></div>
+		<div id="a4"></div>
+		<div id="a5"></div>
+		<div id="a6"></div>
+	</body>
+</html>
