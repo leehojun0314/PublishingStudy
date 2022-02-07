@@ -1,0 +1,45 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+ul {
+	background-color: #ddd;
+	width: 1617px;
+	height: 500px;
+	overflow: auto;
+	scrollbar-width: 17px;
+	margin: 0 auto;
+}
+li {
+	list-style: none;
+	width: 250px;
+	height: 250px;
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+	background-size: 250px;
+}
+li:nth-child(6n + 1) {
+	margin-left: 0px;
+	background-image: url(1.jpg);
+}
+li:nth-child(6n + 2) {
+	background-image: url(2.jpg);
+}
+li:nth-child(6n + 3) {
+	background-image: url(3.jpg);
+}
+li:nth-child(6n + 4) {
+	background-image: url(4.jpg);
+}
+li:nth-child(6n + 5) {
+	background-image: url(5.jpg);
+}
+li:nth-child(6n + 6) {
+	background-image: url(6.jpg);
+}

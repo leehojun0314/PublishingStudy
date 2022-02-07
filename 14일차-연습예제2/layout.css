@@ -1,0 +1,97 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.clearfix {
+	display: block;
+	content: "";
+	clear: both;
+}
+ul {
+	width: 1400px;
+	margin: 0 auto;
+}
+li {
+	width: 335px;
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+	list-style: none;
+}
+
+li:nth-child(4n + 1) {
+	margin-left: 0px;
+}
+#img1 {
+	width: 335px;
+	height: 335px;
+	background-image: url(1.jpg);
+	background-size: 335px;
+}
+#img2 {
+	width: 335px;
+	height: 335px;
+	background-image: url(2.jpg);
+	background-size: 335px;
+}
+#img3 {
+	width: 335px;
+	height: 335px;
+	background-image: url(3.jpg);
+	background-size: 335px;
+}
+#img4 {
+	width: 335px;
+	height: 335px;
+	background-image: url(4.jpg);
+	background-size: 335px;
+}
+#img5 {
+	width: 335px;
+	height: 335px;
+	background-image: url(5.jpg);
+	background-size: 335px;
+}
+#img6 {
+	width: 335px;
+	height: 335px;
+	background-image: url(6.jpg);
+	background-size: 335px;
+}
+#img7 {
+	width: 335px;
+	height: 335px;
+	background-image: url(7.jpg);
+	background-size: 335px;
+}
+#img8 {
+	width: 335px;
+	height: 335px;
+	background-image: url(8.jpg);
+	background-size: 335px;
+}
+/* hover */
+#img1:hover {
+	background-image: url(1-1.jpg);
+}
+#img2:hover {
+	background-image: url(2-1.jpg);
+}
+#img3:hover {
+	background-image: url(3-1.jpg);
+}
+#img4:hover {
+	background-image: url(4-1.jpg);
+}
+#img5:hover {
+	background-image: url(5-1.jpg);
+}
+#img6:hover {
+	background-image: url(6-1.jpg);
+}
+#img7:hover {
+	background-image: url(7-1.jpg);
+}
+#img8:hover {
+	background-image: url(8-1.jpg);
+}
