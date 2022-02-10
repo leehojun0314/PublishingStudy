@@ -1,0 +1,160 @@
+@charset "utf-8";
+@font-face {
+	font-family: "arial-regular";
+	src: url(./fonts/arial.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 0.625em;
+	/* 웹 사이트 마다 사람마다 기업마다 단위를 표시하는 방법이 다르게 때문에 em단위를 쓰는 사람도
+    있어서 이렇게 작성을 할 수도 있다는걸 보여주기 위함 */
+	line-height: 1;
+	/* line-height에 px값을 적으면 그 px값이 정확히 절반으로 나눠져서 글자에 위 아래에 분배된다.
+    하지만 px단위 없이 그냥 숫자를 적으면 대상 태그에 font-size값과 line-height값이 곱해져서 적용된다
+    ex) font-size: 30px; line-height: 3 --> 3 X 30
+    line-height : 90px */
+}
+
+/* em 단위는 html이라는 선택자에 작성한 font-size 값에 내가 em단위에 작성한 값을 곱해주는 배수단위,
+자기 자신에게 사용하면 font-size값을 우선순위로 곱해준다. */
+body {
+	font-family: Arial, sans-serif;
+}
+/* 해당 html파일에 작성하는 모든 폰트를 Arial 폰트로 대체 할 것 */
+
+a {
+	text-decoration: none;
+	color: inherit;
+	/* a태그에 들어가는 밑줄을 업애고 색상을 입력할 때 a태그 당사자한테 넣어주지 않아도 
+color 속성을 작성해줘도 a태그에게 적용되도록 도와주는 css속성  */
+}
+.wrap {
+	margin: 0 auto;
+	width: 700px;
+	background-color: blue;
+}
+.header {
+	background-image: url("img/flife-bg-visual.jpg");
+	height: 425px;
+	padding-top: 108px;
+}
+.header h1 {
+	font-size: 50px;
+	font-family: Arial Bold, sans-serif;
+	color: #ffffff;
+	margin-left: 33px;
+}
+.header h1 span {
+	margin-left: 58px;
+}
+.header p {
+	color: #ffffff;
+	font-size: 26px;
+	font-family: "arial-regular", sans-serif;
+	margin-left: 65px;
+	margin-top: 26px;
+}
+.header address {
+	width: 310px;
+	height: 48px;
+	font-family: "arial-regular", sans-serif;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+	background-color: #32a3dc;
+	color: #ffffff;
+	margin-top: 34px;
+	margin-left: 42px;
+	border-radius: 50px;
+}
+
+.news {
+	padding-top: 52px;
+	padding-bottom: 65px;
+	background-color: #ffffff;
+	text-align: center;
+}
+.news::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.news h2 {
+	font-family: "arial-regular", Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 100;
+	color: #204456;
+}
+.news div {
+	margin-left: 46px;
+	margin-top: 53px;
+	padding-top: 53px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.news div:nth-of-type(1) {
+	margin-left: 0px;
+	background-image: url("img/flife-icon-delivery.png");
+}
+.news div:nth-of-type(2) {
+	background-image: url("img/flife-icon-cash.png");
+}
+.news div:nth-of-type(3) {
+	background-image: url("img/flife-icon-phone.png");
+}
+.news div h3 {
+	font-family: Arial Bold;
+	font-size: 18px;
+	color: #204456;
+}
+.news div p {
+	font-family: "arial-regular";
+	font-size: 14px;
+	font-weight: 18px;
+	color: #204456;
+	margin-top: 14px;
+}
+.zara a {
+	display: block;
+}
+.zara a.women {
+	height: 239px;
+	width: 100%;
+	background-image: url("img/flife-bg-zara1.jpg");
+}
+.zara a.women img {
+	margin: 98px 0 0 50px;
+}
+.zara a.women em {
+	display: block;
+	width: 176px;
+	height: 176px;
+	text-align: center;
+	font-style: normal;
+	font-family: Arial Bold;
+	font-size: 60px;
+	color: #2c2c2c;
+	border: 3px solid #2c2c2c;
+	border-radius: 50%;
+	padding: 35px 0;
+	margin-right: 50px;
+	margin-top: 33px;
+	float: right;
+}
+.zara a.women em b::after {
+	display: block;
+	content: "";
+}
+.zara a.women em span {
+	font-size: 38px;
+	font-weight: 700;
+	font-family: "arial-regular";
+	text-transform: uppercase;
+	display: block;
+}
