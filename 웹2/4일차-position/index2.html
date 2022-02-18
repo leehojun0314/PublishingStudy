@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>position #2</title>
+    <style>
+      *{margin:0;padding:0;}
+
+      #a{width:500px;height:500px;background-color:#987654;
+          margin:0 auto}
+
+      #a div{width:100px;height:100px;}
+
+      #a div:nth-child(1){background-color:green;margin:0 auto;position:relative;left:20px}
+      #a div:nth-child(2){background-color:blue;margin-left:220px}
+      #a div:nth-child(3){background-color:orange}
+    </style>
+  </head>
+  <body>
+      <div id="a">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+  </body>
+</html>

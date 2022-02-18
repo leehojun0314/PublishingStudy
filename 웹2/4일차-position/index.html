@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+      *{margin:0;padding:0;}
+
+      #a{width:500px;height:500px;
+        margin:0 auto;
+        background-color:red}
+
+      #a div{width:100px;height:100px;margin:0 auto}
+
+      #a div:nth-child(1){background-color:orange;position:fixed;left:400px}
+      #a div:nth-child(2){background-color:pink}
+      #a div:nth-child(3){background-color:aqua}
+
+      #scroll{height:3000px}
+    </style>
+  </head>
+  <body>
+    <div id="a">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id="scroll"></div>
+  </body>
+</html>

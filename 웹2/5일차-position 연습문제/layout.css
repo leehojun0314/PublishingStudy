@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#a {
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: #123456;
+}
+#a div,
+#a img {
+	/* position: fixed; */
+	width: 100px;
+	height: 100px;
+}
+#a div {
+	top: 100px;
+	position: relative;
+}
+#a div:nth-child(2) {
+	margin-left: 100px;
+}
+#a div:nth-child(3) {
+	margin-left: 200px;
+}
+#a div:nth-child(4) {
+	margin-left: 300px;
+}
+#a div:nth-child(5) {
+	margin-left: 400px;
+}
+#a div:nth-child(6) {
+	top: 0px;
+	margin-left: 500px;
+}
+#a div:nth-child(7) {
+	top: 0px;
+	margin-top: -100px;
+}

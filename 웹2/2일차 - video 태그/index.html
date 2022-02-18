@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>video 태그</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			video {
+				width: 1500px;
+				/* height: 1000px; */
+				background-color: orange;
+			}
+			/* video 태그의 경우 다른 태그들과 달리 크기를 조절 할 때
+			         width, height를 동시에 사용하면 동영상의 크기가
+			         조절되지 않고 영역만 늘어나서 width, hieght를 동시에 사용해서
+			         크기를 조절하지 않는다. */
+
+			/* width, height 둘중 하나만 사용하면 알아서 비율에 맞춰서 크기가 조절된다. */
+		</style>
+	</head>
+	<body>
+		<video src="2.mp4" controls autoplay muted></video>
+	</body>
+</html>
