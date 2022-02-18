@@ -158,3 +158,40 @@ color 속성을 작성해줘도 a태그에게 적용되도록 도와주는 css�
 	text-transform: uppercase;
 	display: block;
 }
+.zara a.men {
+	height: 239px;
+	background-image: url("img/flife-bg-zara2.jpg");
+}
+.zara a.men img {
+	float: right;
+	margin-right: 42px;
+	margin-top: 98px;
+}
+.zara a.men em {
+	display: block;
+	width: 176px;
+	height: 176px;
+	text-align: center;
+	font-style: normal;
+	font-family: Arial Bold;
+	font-size: 60px;
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	border-radius: 50%;
+	padding: 35px 0;
+	margin-left: 50px;
+	margin-top: 33px;
+	float: left;
+}
+.zara a.men em b::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.zara a.men em span {
+	font-size: 36px;
+	font-weight: 700;
+	font-family: Arial Bold;
+	text-transform: uppercase;
+	display: block;
+}
