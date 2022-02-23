@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>transition #2</title>
+    <style>
+      *{margin:0;padding:0;}
+
+      #a{width:900px;border:4px solid red;
+        margin:0 auto} 
+
+      #a div{width:100px;height:100px;background-color:#123456;
+            margin-top:30px;transition:5s;}
+
+      #a:hover .b{width:900px}
+
+      #a div:nth-child(1){transition-timing-function:linear;}
+
+      #a div:nth-child(2){transition-timing-function:ease-out;}
+
+      #a div:nth-child(3){transition-timing-function:ease-in;}
+
+      #a div:nth-child(4){transition-timing-function:ease;}
+
+      #a div:nth-child(5){transition-timing-function:ease-in-out;}
+    </style>
+  </head>
+  <body>
+    <div id="a">
+      <div class="b"></div>
+      <div class="b"></div>
+      <div class="b"></div>
+      <div class="b"></div>
+      <div class="b"></div>
+    </div>
+  </body>
+</html>

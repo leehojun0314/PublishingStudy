@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>드롭다운 메뉴</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				list-style: none;
+			}
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			#one {
+				margin: 200px;
+			}
+			#one > li {
+				float: left;
+				background-color: pink;
+			}
+			#one li {
+				width: 200px;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+			}
+			.two li {
+				background-color: #123456;
+				color: white;
+			}
+			.two {
+				display: none;
+				transition: 2s;
+			}
+			#one > li:hover .two {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="one" class="clearfix">
+			<li>
+				과일 종류
+				<ul class="two">
+					<li>사과</li>
+					<li>딸기</li>
+					<li>포도</li>
+				</ul>
+			</li>
+			<li>
+				동물 종류
+				<ul class="two">
+					<li>사자</li>
+					<li>하마</li>
+					<li>기린</li>
+				</ul>
+			</li>
+			<li>
+				운동 종류
+				<ul class="two">
+					<li>축구</li>
+					<li>배구</li>
+					<li>농구</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

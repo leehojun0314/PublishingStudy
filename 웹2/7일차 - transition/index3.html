@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>transition</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#a {
+				width: 400px;
+				height: 400px;
+				background-color: #123456;
+				color: white;
+				transition-property: width, background-color, font-size;
+				transition-duration: 1s, 5s, 6s;
+			}
+			#a:hover {
+				width: 900px;
+				background-color: #987654;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">div 태그 입니다</div>
+	</body>
+</html>

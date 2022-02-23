@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>드롭다운 메뉴 #2</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#a {
+				width: 400px;
+				height: 400px;
+				background-color: red;
+				transition: 2s;
+			}
+			#b {
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				/* opacity: 0; */
+				height: 0;
+				transition: 2s;
+			}
+			#a:hover #b {
+				/* opacity: 1; */
+				height: 200px;
+			}
+			/* ★★transition이라는 css속성은 대상태그가 일단 존재하는 상태여야지 적용이 되는 css속성
+            display: none = 태그를 삭제시키는 개념
+            display: block = 삭제된 태그를 다시 복구 시키는 개념
+
+            삭제 -> 복구 이 과정에 transition동작을 하지 않는것 */
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<div id="b"></div>
+		</div>
+	</body>
+</html>

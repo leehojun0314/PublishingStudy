@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>드롭다운 메뉴 #4</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				list-style: none;
+			}
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			#nav {
+				width: 600px;
+			}
+			#nav > li {
+				width: 200px;
+				font-size: 14px;
+				background-color: black;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+				color: white;
+				float: left;
+				border-bottom: 1px solid #808080;
+			}
+			.submenu li {
+				font-size: 12px;
+				background-color: #999999;
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #777777;
+			}
+			.submenu li:hover {
+				background-color: burlywood;
+			}
+			.submenu {
+				height: 0px;
+				transition: 1s;
+				overflow: hidden;
+			}
+			/* #nav > li:hover .submenu { 
+                메뉴가 한번에 하나씩 나오는 방법
+				height: 205px;
+			} */
+
+			#nav:hover .submenu {
+				/* 메뉴가 한번에 전부 나오는 방법 */
+				height: 205px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="nav" class="clearfix">
+			<li>
+				MENU - 1
+				<ul class="submenu">
+					<li>menu-1</li>
+					<li>menu-2</li>
+					<li>menu-3</li>
+					<li>menu-4</li>
+					<li>menu-5</li>
+				</ul>
+			</li>
+			<li>
+				MENU - 2
+				<ul class="submenu">
+					<li>menu-1</li>
+					<li>menu-2</li>
+					<li>menu-3</li>
+					<li>menu-4</li>
+					<li>menu-5</li>
+				</ul>
+			</li>
+			<li>
+				MENU - 3
+				<ul class="submenu">
+					<li>menu-1</li>
+					<li>menu-2</li>
+					<li>menu-3</li>
+					<li>menu-4</li>
+					<li>menu-5</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

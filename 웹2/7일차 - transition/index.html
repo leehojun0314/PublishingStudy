@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <style>
+      *{margin:0;padding:0;}
+
+      #a{width:400px;height:400px;
+          background-color:red;transition:1s}
+
+      #a:hover{width:900px;}
+
+      #b{width:300px;height:300px;
+        background-color:blue;
+        transition:3s;
+        transition-delay:3s;}
+
+      #b:hover{width:600px}
+    </style>
+  </head>
+  <body>
+    <div id="a"></div>
+
+    <div id="b"></div>
+  </body>
+</html>
