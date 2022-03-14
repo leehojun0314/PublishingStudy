@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>애니메이션 #3</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#box {
+				width: 100px;
+				margin: 300px auto;
+			}
+			.ob {
+				width: 50px;
+				height: 8px;
+				margin-bottom: 15px;
+				background-color: #123456;
+				animation: abc 1s infinite;
+			}
+			.ob:nth-child(2n + 1) {
+				animation-delay: 0.2s;
+			}
+			/* .ob:nth-child(n+1){
+                animation-delay: 
+            } */
+
+			@keyframes abc {
+				50% {
+					transform: translateX(100px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+		</div>
+	</body>
+</html>

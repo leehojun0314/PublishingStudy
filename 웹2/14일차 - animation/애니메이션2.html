@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>애니메이션 #2</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#box {
+				width: 400px;
+				margin: 300px auto;
+			}
+			.ob {
+				width: 18px;
+				height: 18px;
+				background-color: #123456;
+				float: left;
+				margin-left: 15px;
+				border-radius: 300px;
+				animation: abc 1s infinite;
+				animation-timing-function: ease;
+			}
+			.ob:nth-child(1) {
+				animation-delay: 0.1s;
+			}
+			.ob:nth-child(2) {
+				animation-delay: 0.2s;
+			}
+			.ob:nth-child(3) {
+				animation-delay: 0.3s;
+			}
+			.ob:nth-child(4) {
+				animation-delay: 0.4s;
+			}
+			.ob:nth-child(5) {
+				animation-delay: 0.5s;
+			}
+			.ob:nth-child(6) {
+				animation-delay: 0.6s;
+			}
+			.ob:nth-child(7) {
+				animation-delay: 0.7s;
+			}
+			.ob:nth-child(8) {
+				animation-delay: 0.8s;
+			}
+			.ob:nth-child(9) {
+				animation-delay: 0.9s;
+			}
+			@keyframes abc {
+				50% {
+					transform: translateY(80px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+			<div class="ob"></div>
+		</div>
+	</body>
+</html>
